@@ -7,7 +7,7 @@ def replace(file_name, output_file_name):
         pattern1 = r"\$\$\n*([\s\S]*?)\n*\$\$"
         new_pattern1 = r'\n<img src="https://www.zhihu.com/equation?tex=\1" alt="\1" class="ee_img tr_noresize" eeimg="1">\n'
         pattern2 = r"\$\n*(.*?)\n*\$"
-        new_pattern2 =r'\n<img src="https://www.zhihu.com/equation?tex=\1" alt="\1" class="ee_img tr_noresize" eeimg="1">\n'
+        new_pattern2 =r'<img src="https://www.zhihu.com/equation?tex=\1" alt="\1" class="ee_img tr_noresize" eeimg="1">'
         f = open(file_name, 'r', encoding='utf-8')
         f_output = open(output_file_name, 'w')
         all_lines = f.read()
