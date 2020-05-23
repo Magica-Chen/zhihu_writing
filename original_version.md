@@ -1,6 +1,6 @@
 # Gaussian process classification初介绍——回归与分类其实只有一线之隔
 
-![GPC](GPC.png)
+![GPC](D:\OneDrive\zhihu_writing\GPC.png)
 
 
 
@@ -21,7 +21,7 @@
 
 什么？还是太复杂？好吧，我们来说个例子吧！
 
-![天气预报](weather.png)
+![天气预报](D:\OneDrive\zhihu_writing\weather.png)
 
 对，就是你最熟悉的天气预报！
 
@@ -45,7 +45,7 @@ Okay，仔细的你或许还会发现，这个“标签”和“标签”还长�
 
 最后我们再从直观上给出一个例子，来感受一些回归与分类这对孪生兄弟的异同：
 
-![Classification VS Regression](class-regress.png)
+![Classification VS Regression](D:\OneDrive\zhihu_writing\class-regress.png)
 
 比如这里的分类，我们简单的用气温和湿度去考察天气情况，这里再简单起见，我们只考虑二分类binary，即下雨和不下雨。相应的这里的回归，我们考察的是温度与湿度之间的关系。总结来说：
 
@@ -101,7 +101,7 @@ Bingo，回答正确！
 
 聪明的你或许直接就会想到，用上面的直线呀！
 
-![correct](correct-mark-hi.png)
+![correct](D:\OneDrive\zhihu_writing\correct-mark-hi.png)
 
 针对上面气温湿度与天气状况的分类问题，根据示意图，我们可以自然而然想到，只要“适当”画一条线就好了呀。简单一点的话，就是条直线，想要精确一点那就画条曲线就好了呀！
 
@@ -161,7 +161,7 @@ p(C_1|x) = \lambda(X^Tw), \mbox{where}, \lambda(z) = \frac{1}{1 + \exp(-z)}.
 $$
 当然这个模型本身就是linear模型复合上了logistic response function。这个就是大名鼎鼎的logistic函数。
 
-![logistic function](logistic.png)
+![logistic function](D:\OneDrive\zhihu_writing\logistic.png)
 
 当然如果你试着回忆下还有一个函数长得跟这个非常类似，它就是标准正态分布的累计密度函数，
 $$
@@ -175,7 +175,7 @@ $$
 
 **到底我该选择谁**？ 
 
-![Left or Right?](leftandright.jpeg)
+![Left or Right?](D:\OneDrive\zhihu_writing\leftandright.jpeg)
 
 这是个大问题，没有一个标准答案，但是我们分析在各种情况下，两者的优劣：
 
@@ -195,7 +195,7 @@ $$
 
 有了之前的预备只是，或许你真的会发现GPR与GPC只有一线之隔哦！同样的配方，同样的方法，唯一不同就是output。因为我们可以发现，如果仿照刚才的linear model+logistic function = linear logistic model，可以被用来走classification的话，那么对于GPC则是，在GPR的基础上，再走一步，将这个GPR得到的output，通过*适合*的S型response函数获得相应的class probability，这样一来高斯过程分类就是可以搞定了么！用一张流程图来表示这个操作就是：
 
-![GPC-Operation](gpc_process.png)
+![GPC-Operation](D:\OneDrive\zhihu_writing\gpc_process.png)
 
 
 
@@ -207,9 +207,4 @@ $$
 
 **高斯过程分类**
 
-![Coming soon](COMING+SOON.jpg)
-
-
-
-
-
+![Coming soon](D:\OneDrive\zhihu_writing\COMING+SOON.jpg)
