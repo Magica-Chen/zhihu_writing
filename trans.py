@@ -22,8 +22,8 @@ def replace(file_name, output_file_name):
 
 
 if __name__ == '__main__':
-    file_name = './doc/GPC.md'
+    file_name = './doc/' + sys.argv[1] + '.md'
     file_name_pre = file_name.split(".")[0]
-    output_file_name = "./zhihu_doc/GPC_zhihu_version.md"
+    output_file_name = "./zhihu_doc/" + sys.argv[1] + "_zhihu_version.md"
     replace(file_name, output_file_name)
     print('Trans from {} to {}'.format(file_name, output_file_name))
